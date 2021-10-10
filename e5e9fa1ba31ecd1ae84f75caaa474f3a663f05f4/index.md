@@ -79,11 +79,17 @@ Isto é importante, porque, um dia que o tema tenha algum update, seja fácil pe
 
 Nome | Tipo | O que foi alterado
 ------------ | ------------- | -------------
+theme.js | Main theme javascript | Mudanças na função initProductVariant. Conforme a tag que o produto tenha, gera ou não os selectors automaticamente. Ver tags para mais pormenores.
 search.liquid | Template | linha 19. De grid_results = false para grid_results = true
+ 
 
 ### Tags
 #### Administrativas 
 Todas as tags administrativas começam por configuration
+
+Nome | Descrição
+------------ | ------------- 
+configurationNoDefaultInitProduct | Esta tag é usada para que os seletectors das opções das variantes não sejam automaticamente gerados pelo shopify. 
 
 
 #### Outras
@@ -92,10 +98,11 @@ Todas as tags administrativas começam por configuration
 
 ### Snippets
 
-Nome | Tipo | Descrição
------------- | ------------- | -------------
-snippet-receiving-name | |
-snippet-offering-name | |
+Nome | Descrição
+------------ | ------------- 
+snippet-receiving-name |
+snippet-offering-name |
+snippet-school-receiving-name.liquid  | Este snippet tem algumas instruções para quem preenche o nome da Educadora, Professora (...) a quem se destina o miminho. Neste momento é usado no template sentence.offer.receives 
 
 
 
