@@ -34,6 +34,43 @@ Permite por isso definir aspectos como opcções adicionais, como nomes para per
 
 É importante que todas as opções de um produto, que tenham influência no preço final, por exemplo ter ou não embrulho, seja configuradas, via shopify, adicionando essas opções como variantes do produto, e não via html/javascript directamente no tema.
 
+##### Product só nome de quem recebe e nome de quem recebe
+**Ficheiros**
+Template: product.receives.offer.liquid
+Section: product-receives-offer-template.liquid
+
+**Baseado em..**
+Template: product.liquid
+Section: product-template.liquid
+
+A diferença é a inclusão dos snippets com os nomes de quem recebe e o nome de quem oferece para serem personalizados
+
+            {%- if product.tags contains "configurationDontShowReceivingName" -%}
+                <!-- do nothing -->
+            {%- else -%}
+                {% include 'snippet-receiving-name' %}
+            {%- endif -%}
+          
+            {%- if product.tags contains "configurationDontShowReceivingName" -%}
+          		<!-- do nothing -->
+          	{%- else -%}
+          		{% include 'snippet-offering-name' %}
+          	{%- endif -%}
+           
+
+
+**Detalhes**
+Este template é útil quando, apenas existe uma opção variante seguido do nome de quem recebe e o nome de quem oferece.
+Este template também serve, se os nomes a personalizar puderem aparecer no fim de todas as opções.
+Outro aspecto importante deste template é a mudança de variante, faz com que a imagem mostrada, mude também.
+
+A product-template.liquid
+
+Exemplo de página
+![image](https://user-images.githubusercontent.com/92253809/136712184-1482dff8-1363-48c2-b588-3530331e869a.png)
+
+
+
 
 
 ### Páginas Alteradas
@@ -52,6 +89,13 @@ Todas as tags administrativas começam por configuration
 #### Outras
 
 
+
+### Snippets
+
+Nome | Tipo | Descrição
+------------ | ------------- | -------------
+snippet-receiving-name | |
+snippet-offering-name | |
 
 
 
