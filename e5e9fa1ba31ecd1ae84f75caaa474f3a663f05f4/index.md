@@ -6,6 +6,7 @@
   * [Outras](#outras)
 
 
+
 ### Páginas Criadas
 
 #### Collections
@@ -34,10 +35,14 @@ Permite por isso definir aspectos como opcções adicionais, como nomes para per
 É importante que todas as opções de um produto, que tenham influência no preço final, por exemplo ter ou não embrulho, seja configuradas, via shopify, adicionando essas opções como variantes do produto, e não via html/javascript directamente no tema.
 
 
+
 ### Páginas Alteradas
 Esta secção enumera todas as páginas do tema que foram alteradas. 
 Isto é importante, porque, um dia que o tema tenha algum update, seja fácil perceber que páginas foram impactadas.
 
+Nome | Tipo | O que foi alterado
+------------ | ------------- | -------------
+search.liquid | Template | linha 19. De grid_results = false para grid_results = true
 
 ### Tags
 #### Administrativas 
