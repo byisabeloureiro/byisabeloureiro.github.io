@@ -90,6 +90,9 @@ Todas as tags administrativas começam por configuration
 Nome | Descrição
 ------------ | ------------- 
 configurationNoDefaultInitProduct | Esta tag é usada para que os seletectors das opções das variantes não sejam automaticamente gerados pelo shopify. 
+configurationSchool | Esta tag faz com que no campo, nome de quem receba, apareça em itálico um exemplo de como preencher com Educª, etc... (ver imagem em baixo)
+
+![image](https://user-images.githubusercontent.com/92253809/137212901-6205d851-5cd2-429b-98fb-a2328baf4b08.png)
 
 
 #### Outras
