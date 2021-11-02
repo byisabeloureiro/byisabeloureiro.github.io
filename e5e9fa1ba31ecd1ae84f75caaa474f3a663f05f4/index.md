@@ -1,3 +1,22 @@
+**Índice**
+- [Páginas Alteradas](#páginas-alteradas)
+- [Tags](#tags)
+  * [Administrativas](#administrativas)
+  * [Outras](#outras)
+
+
+### Páginas Criadas
+
+#### Collections
+
+##### Natal
+
+Nome | Tipo | Descrição
+------------ | ------------- | -------------
+collection.natal.liquid | Template | Template chamado por uma determinada collecao
+collection-natal-template.liquid | Section | Section
+
+
 
 
 
@@ -13,8 +32,6 @@ Todas as tags administrativas começam por configuration
 
 #### Outras
 
-
-### How To's
 
 
 
@@ -35,5 +52,4 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
 ```
